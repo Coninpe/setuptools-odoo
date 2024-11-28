@@ -53,8 +53,8 @@ odoo17c = _addons("17c")
 odoo17e = _addons("17e")
 odoo17 = odoo17c | odoo17e
 
-odoo18c = _addons("17c")
-odoo18e = _addons("17e")
+odoo18c = _addons("18c")
+odoo18e = _addons("18e")
 odoo18 = odoo18c | odoo18e
 
 all = (

@@ -11,6 +11,8 @@ from manifestoo_core.odoo_series import OdooEdition
 
 SERIES = [
     # branch,  enterprise, target
+    ("18.0", True, "18"),
+    ("17.0", True, "17"),
     ("16.0", True, "16"),
     ("15.0", True, "15"),
     ("14.0", True, "14"),
@@ -76,7 +78,7 @@ def main() -> None:
                     "--depth=1",
                     "--branch",
                     branch,
-                    "git@github.com:odoo/enterprise",
+                    "https://github.com/odoo/enterprise",
                     tmpdir,
                 )
                 _write_addons_list(
